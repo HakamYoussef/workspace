@@ -2,6 +2,7 @@ import { MailList } from "./components/mail/MailList";
 import { MailPreviewProps } from "./components/mail/MailPreview";
 import { Sidebar, WorkspaceItem } from "./components/layout/Sidebar";
 import { WorkspacePanel, Note } from "./components/workspace/WorkspacePanel";
+import { TeamWorkspace } from "./components/workspace/TeamWorkspace";
 
 const mailItems: MailPreviewProps[] = [
   {
@@ -167,6 +168,8 @@ export default function Home() {
               </li>
             </ul>
           </div>
+
+          <TeamWorkspace />
         </section>
       </div>
     </main>

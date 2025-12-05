@@ -332,6 +332,125 @@ h3 {
   gap: 10px;
 }
 
+.card,
+.compose-card {
+  background: #0f1420;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card__header,
+.compose-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field__label {
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  color: var(--muted);
+}
+
+.field input,
+.field textarea,
+.select select {
+  background: #0c0f16;
+  border: 1px solid var(--line);
+  color: white;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+.team-workspace {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.team-workspace__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.team-workspace__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.team-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.team-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  background: #0c0f16;
+}
+
+.team-card__title {
+  font-weight: 700;
+}
+
+.team-card__members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.compose-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.recipient-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.status-banner {
+  background: linear-gradient(90deg, rgba(124, 155, 255, 0.12), rgba(17, 22, 33, 0.8));
+  border: 1px solid var(--accent);
+  color: white;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
 .workspace-note {
   background: #0f1420;
   border: 1px solid var(--line);
